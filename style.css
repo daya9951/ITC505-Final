@@ -2,20 +2,26 @@ body {
     font-family: sans-serif;
     text-align: center;
     margin-top: 30px;
+    background-color: #f0f0f0;
 }
+
 #game-board {
     display: grid;
     grid-template-columns: repeat(5, 60px);
-    grid-gap: 5px;
+    gap: 5px;
     justify-content: center;
+    margin-top: 20px;
 }
+
 .square {
     width: 60px;
     height: 60px;
     background-color: yellow;
     border: 2px solid black;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
+
 .is-off {
     background-color: black;
 }
