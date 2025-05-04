@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 5px;
+    justify-content: center;
+}
+.square {
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.is-off {
+    background-color: black;
+}
