@@ -1,8 +1,17 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 30px;
-    background-color: #f0f0f0;
+    background-color: #eef6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#controls {
+    margin: 20px;
 }
 
 #game-board {
@@ -10,18 +19,23 @@ body {
     grid-template-columns: repeat(5, 60px);
     gap: 5px;
     justify-content: center;
-    margin-top: 20px;
+    margin: 0 auto;
 }
 
 .square {
     width: 60px;
     height: 60px;
     background-color: yellow;
-    border: 2px solid black;
+    border: 1px solid #333;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .is-off {
     background-color: black;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
 }
