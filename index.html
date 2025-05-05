@@ -22,12 +22,10 @@
     </script>
 </body>
 </html>
-/*
+
 Addendum: Development Process & Reflection
 
-To develop the Lights Out game, I began by understanding the core mechanics: clicking a cell should toggle its state along with its immediate neighbors (up, down, left, right). I used a 5x5 grid created with JavaScript DOM elements and styled it with CSS for visual clarity. The `.is-off` class toggles the cell between yellow (on) and black (off).
-
-To ensure a random but solvable board each time, I simulated 15 random valid clicks from a clean state — this avoids generating unsolvable patterns. I added a "New Game" button to regenerate the board and a footer showing the last modified time, as required.
-
+To develop the Lights Out game, I began by understanding the core mechanics: clicking a cell should toggle its state along with its immediate neighbors (up, down, left, right). I used a 5x5 grid created with JavaScript DOM elements and styled it with CSS for visual clarity.
+The `.is-off` class toggles the cell between yellow (on) and black (off).To ensure a random but solvable board each time, I simulated 15 random valid clicks from a clean state — this avoids generating unsolvable patterns. I added a "New Game" button to regenerate the board and a footer showing the last modified time, as required.
 Challenges included correctly managing edge cells (to avoid out-of-bounds toggling) and verifying the win condition. I used `Array.flat().every()` to check if all cells were off (black), triggering a "You win!" alert. This project helped reinforce my understanding of DOM manipulation, event handling, and UI logic separation.
-*/
+
